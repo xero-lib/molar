@@ -73,4 +73,40 @@ fn main() {
             kind: Noble,
         },
     );
+
+    elements.insert(
+        "Li",
+        ElementData {
+            name: "Lithium",
+            number: 3,
+            molar_mass: 6.941,
+            ionic_charge: Some(1),
+            period_colum: PackedPeriodCol::new(2, 1),
+            kind: Alkali,
+        },
+    );
+
+    elements.insert(
+        "Be",
+        ElementData {
+            name: "Beryllium",
+            number: 4,
+            molar_mass: 9.012,
+            ionic_charge: Some(2),
+            period_colum: PackedPeriodCol::new(2, 2),
+            kind: AlkalineEarth,
+        },
+    );
+
+    elements.insert(
+        "B",
+        ElementData {
+            name: "Boron",
+            number: 5,
+            molar_mass: 10.811,
+            ionic_charge: None,
+            period_colum: PackedPeriodCol::new(2, 13),
+            kind: Metalloid,
+        },
+    );
 }
